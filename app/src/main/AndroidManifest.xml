@@ -18,6 +18,11 @@
         </activity>
         <activity android:name=".PublicActivity"
                   android:exported="true">
+            <!-- Action 指定による暗黙的 Intent を受信するようにintent-filterを定義 -->
+            <intent-filter>
+                <action android:name="jp.ac.titech.itpro.action.MyProvider"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
     </application>
 
